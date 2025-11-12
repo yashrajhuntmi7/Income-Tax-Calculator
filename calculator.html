@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html"><button>← Back</button></a>
+        <h1>Income Tax Calculator (India)</h1>
+    </div>
+    <div class="calculator">
+        <label for="income">Annual Income (₹) :</label>
+        <input type="number" id="income" name="income" placeholder="Enter Your Annual Income">
+        <br>
+        <label for="income-type">Income Type:</label>
+        <select id="income-type">
+            <option value="">--Select Income Type--</option>
+            <option value="salaried">Salaried / Pension</option>
+            <option value="business">Business / Profession</option>
+        </select>
+        <br>
+        <label for="age">Choose Age Group :</label>
+        <select id="age">
+            <option value="">--Please Select Your Age Group--</option>
+            <option value="below60">Age Below 60</option>
+            <option value="60-80">Age Between 60-80</option>
+            <option value="above80">Age Above 80</option>
+        </select>
+        <br>
+        <p>Choose Regime :</p>
+        <label for="new">New Regime</label>
+        <input id="new" name="regime" type="radio">
+        <label for="old">Old Regime</label>
+        <input id="old" name="regime" type="radio">
+        <br>
+        <p id="standard-deduction">Standard Deduction : ₹75,000</p>
+        <br>
+        <div class="deduction">
+        <label for="80C">Section 80C Deductions :</label>
+        <input type="number" id="80C" name="80C" placeholder="Max ₹ 1.5L" max="150000">
+        <br>
+        <label for="80D">Section 80D (Medical Insurance) :</label>
+        <input type="number" id="80D" name="80D" placeholder="Self/family ₹25K; Senior parents ₹50K">
+        <br>
+        <label for="home-loan">Home Loan Interest (Section 24b) :</label>
+        <input type="number" id="home-loan" name="home-loan" placeholder="Max ₹ 2L" max="200000">
+        <br>
+        <label for="hra">HRA Exemption :</label>
+        <input type="number" id="hra" name="hra" placeholder="Optional Field">
+        <br>
+        <label for="other">Other Deductions :</label>
+        <input type="number" id="other" name="other" placeholder="80E (education loan), LTA, etc.">
+        </div>
+        <br>
+        <label for="other-income">Other Income (Optional) :</label>
+        <input type="number" id="other-income" name="other-income" placeholder="Eg. Interest , Rents etc.">
+        <br>
+        <button type="submit">Calculate</button>
+    </div>
+    <footer>
+    <p>© 2025 Income Tax Calculator | Made by Yashraj Panghal</p>
+    </footer>
+</body>
+</html>
