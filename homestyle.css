@@ -4,6 +4,7 @@ body {
     padding: 0;
     background: linear-gradient(180deg, #e8f1ff 0%, #f9fbff 100%);
     color: #222;
+    transition: all 0.3s ease;
 }
 
 .navbar {
@@ -18,6 +19,28 @@ body {
     font-weight: 600;
     box-shadow: 0 4px 10px rgba(0,0,0,0.25);
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar button {
+    background: white;
+    color: #004aad;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: absolute;
+    right: 50px;
+}
+
+.navbar button:hover {
+    background: #e6f0ff;
+    transform: scale(1.05);
 }
 
 .hero {
@@ -44,6 +67,7 @@ body {
     max-width: 900px;
     margin: 30px auto;
     padding: 0 15px;
+    transition: all 0.3s ease;
 }
 
 .card {
@@ -52,7 +76,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     text-align: center;
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.3s ease, color 0.3s ease;
 }
 
 .card h3 {
@@ -95,6 +119,7 @@ button:hover {
     background: white;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
 }
 
 .about-mini h2 {
@@ -132,4 +157,64 @@ footer {
         font-size: 18px;
         padding: 12px 10px;
     }
+    .navbar button{
+        position: absolute;
+        right: 30px;
+    }
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+    background: linear-gradient(90deg, #222, #555);
+    color: #fff;
+}
+
+body.dark-mode .navbar button {
+    background: #444;
+    color: #fff;
+}
+
+body.dark-mode .navbar button:hover {
+    background: #555;
+}
+
+body.dark-mode .hero h2,
+body.dark-mode .hero p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .card {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 8px 20px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .card h3 {
+    color: #00c6ff;
+}
+
+body.dark-mode .card p {
+    color: #ccc;
+}
+
+body.dark-mode .about-mini {
+    background: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 8px 20px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .about-mini h2 {
+    color: #00c6ff;
+}
+body.dark-mode .about-mini p {
+    color: white;
+}
+
+body.dark-mode footer {
+    background: #222;
+    color: #fff;
 }
