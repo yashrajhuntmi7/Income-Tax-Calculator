@@ -1,4 +1,4 @@
-/* ====== GENERAL STYLING ====== */
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #eef3f8;
@@ -7,8 +7,6 @@ body {
   color: #222;
 }
 
-/* ====== NAVBAR ====== */
-/* ===== NAVBAR (Same as LearnMore + Responsive) ===== */
 .navbar {
   position: fixed;
   top: 0;
@@ -21,7 +19,6 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 100;
   padding: 0 15px;
 }
@@ -51,9 +48,9 @@ body {
 
 .navbar a button:hover {
   background: #e6f0ff;
+  transform: scale(1.04);
 }
 
-/* ===== Responsive Fix for Small Screens ===== */
 @media (max-width: 600px) {
   .navbar {
     height: 60px;
@@ -73,10 +70,6 @@ body {
   }
 }
 
-
-
-/* ====== FIXED INCOME FIELD ====== */
-/* Wrap label and input neatly on one line */
 .calculator label[for="income"] {
   width: 35%;
   min-width: 180px;
@@ -86,22 +79,18 @@ body {
   vertical-align: middle;
 }
 
-/* Input styling beside the label */
 #income {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
   font-size: 16px;
   border-radius: 8px;
-  border: 1.5px solid #007bff;
   background-color: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   vertical-align: middle;
 }
 
 
-
-/* ====== CALCULATOR BODY ====== */
 .calculator {
   margin-top: 160px;
   background-color: #fff;
@@ -138,7 +127,6 @@ body {
   box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
 }
 
-/* ====== STANDARD DEDUCTION ====== */
 #standard-deduction {
   font-weight: bold;
   color: #008000;
@@ -146,7 +134,7 @@ body {
   display: none;
 }
 
-/* ====== BUTTON ====== */
+
 button[type="submit"] {
   background: linear-gradient(90deg, #007bff, #00c6ff);
   color: #fff;
@@ -166,7 +154,6 @@ button[type="submit"]:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ====== RESPONSIVE DESIGN ====== */
 @media (max-width: 600px) {
   .navbar h1 {
     font-size: 16px;
